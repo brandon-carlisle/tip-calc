@@ -73,6 +73,8 @@ select {
   }
 }
 
+/* Styles */
+
 :root {
   --clr-black: #262525;
   --clr-dark-blue: #47535c;
@@ -112,7 +114,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  flex: 1 1 0;
+  justify-content: space-between;
+  flex: 1 1 50%;
   width: 50%;
 }
 
@@ -172,4 +175,26 @@ body {
   font-size: 4rem;
   font-weight: 600;
   color: var(--clr-black);
+}
+
+.btn-calculate {
+  padding: 2rem;
+  border: 1px solid var(--clr-green);
+  border-radius: 5px;
+
+  font-size: 2rem;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-calculate:hover {
+  background-color: #749483;
+}
+
+.total-label,
+.tip-label {
+  transition: all 0.3s;
+  opacity: 0;
 }
