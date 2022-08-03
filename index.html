@@ -9,6 +9,38 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1 class="heading-primary">Tip Calculator</h1>
+    <div class="app-container">
+      <!-- <h1 class="heading-primary">Tip Calculator</h1> -->
+      <main class="app-main">
+        <div class="left">
+          <div class="choices bill-choice">
+            <label class="form-labels" for="bill-input">Bill</label>
+            <input class="form-inputs" type="number" id="bill-input" />
+          </div>
+          <div class="choices tip-choice">
+            <label class="form-labels" for="tip-input">Tip %</label>
+            <input class="form-inputs" type="number" id="tip-input" />
+          </div>
+          <div class="choices people-choice">
+            <label class="form-labels" for="people-input"
+              >Number of People</label
+            >
+            <input class="form-inputs" type="number" id="people-input" />
+          </div>
+        </div>
+        <div class="right">
+          <div class="tip-calculated right-box">
+            <h3 class="tertiary-heading">Tip</h3>
+            <span class="info">Per Person</span>
+            <div class="prices">£34</div>
+          </div>
+          <div class="total right-box">
+            <h3 class="tertiary-heading">Total</h3>
+            <span class="info">Including tips</span>
+            <div class="prices">£134</div>
+          </div>
+        </div>
+      </main>
+    </div>
   </body>
 </html>

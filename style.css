@@ -89,13 +89,87 @@ body {
   font-family: sans-serif;
   background-color: var(--clr-cream);
   color: var(--clr-black);
+}
 
+.app-container {
   height: 100%;
   min-height: 100vh;
   display: grid;
   place-items: center;
 }
 
+.app-main {
+  display: flex;
+  gap: 2.5rem;
+}
+
 .heading-primary {
   font-size: 5rem;
+}
+
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1 1 0;
+  width: 50%;
+}
+
+.choices {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 2.5rem;
+  color: var(--clr-cream);
+}
+
+.form-labels {
+  color: currentColor;
+  font-size: inherit;
+  background-color: var(--clr-black);
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.form-inputs {
+  font-size: inherit;
+  color: var(--clr-black);
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid var(--clr-dark-blue);
+  outline: none;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.right {
+  justify-content: center;
+}
+
+.right-box {
+  padding: 2rem;
+  border: 1px solid var(--clr-green);
+  border-radius: 5px;
+}
+
+.tertiary-heading {
+  font-size: 3.2rem;
+  font-weight: normal;
+  color: var(--clr-black);
+}
+
+.info {
+  display: block;
+  margin-bottom: 1rem;
+  opacity: 0.8;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: var(--clr-dark-blue);
+}
+
+.prices {
+  font-size: 4rem;
+  font-weight: 600;
+  color: var(--clr-black);
 }
