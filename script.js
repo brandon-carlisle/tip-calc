@@ -14,7 +14,6 @@ btnCalculate.addEventListener('click', function () {
 
   if (billPrice >= 1 && tipPercentage > 0 && tipPercentage <= 100) {
     total = calculateTotal(billPrice, tipPercentage).toFixed(2);
-    console.log(total);
     totalLabel.textContent = `£${total}`;
     totalLabel.style.opacity = 100;
 
