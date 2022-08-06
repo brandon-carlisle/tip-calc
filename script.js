@@ -22,13 +22,13 @@ btnCalculate.addEventListener('click', function () {
 
   if (billPrice >= 1 && tipPercentage > 0 && tipPercentage <= 100) {
     // Calculate and show total
-    total = Math.ceil(calculateTotal(billPrice, tipPercentage));
+    total = calculateTotal(billPrice, tipPercentage).toFixed(2);
     console.log(total);
     totalLabel.textContent = `£${total}`;
     totalLabel.style.opacity = 100;
 
     // Calculate and show per person
-    const perPerson = Math.ceil(calculatePerPerson(total, numberOfPeople));
+    const perPerson = calculatePerPerson(total, numberOfPeople).toFixed(2);
     tipLabel.textContent = `£${perPerson}`;
     tipLabel.style.opacity = 100;
   }
