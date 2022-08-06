@@ -87,6 +87,12 @@ html {
   font-size: 62.5%;
 }
 
+@media screen and (max-width: 54em) {
+  html {
+    font-size: 52.5%;
+  }
+}
+
 body {
   font-family: sans-serif;
   background-color: var(--clr-cream);
@@ -103,6 +109,19 @@ body {
 .app-main {
   display: flex;
   gap: 2.5rem;
+}
+
+@media screen and (max-width: 31.25em) {
+  .app-container {
+    place-items: stretch;
+    min-width: 100%;
+  }
+
+  .app-main {
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  }
 }
 
 .heading-primary {
